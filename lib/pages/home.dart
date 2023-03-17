@@ -6,9 +6,10 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Stack(
+       body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Stack(
             children: [
               Padding(
                 padding: const EdgeInsets.only(right: 16.0, left: 16.0, top: 16.0),
@@ -104,7 +105,7 @@ Text(
                         Image.asset(
                     'assets/imageT1.jpg',
                           width: double.infinity,
-                          height: 55,
+                          // height: 55,
                           fit: BoxFit.cover,
                         ),
                         Padding(
@@ -145,7 +146,7 @@ Text(
                         Image.asset(
                     'assets/imageT1.jpg',
                           width: double.infinity,
-                          height: 55,
+                          // height: 55,
                           fit: BoxFit.cover,
                         ),
                         Padding(
@@ -178,45 +179,45 @@ Text(
                 ),
 
                 // Card 3
-                SizedBox(width: 16),
-                Expanded(
-                  child: Card(
-                    child: Column(
-                      children: [
-                       Image.asset(
-                    'assets/imageT1.jpg',
-                          width: double.infinity,
-                          height: 55,
-                          fit: BoxFit.cover,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Title 3',
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Prompt',
-                                ),
-                              ),
-                              SizedBox(height: 4),
-                              Text(
-                                'Subtitle 3',
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontFamily: 'Prompt',
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                // SizedBox(width: 16),
+                // Expanded(
+                //   child: Card(
+                //     child: Column(
+                //       children: [
+                //        Image.asset(
+                //     'assets/imageT1.jpg',
+                //           width: double.infinity,
+                //           height: 55,
+                //           fit: BoxFit.cover,
+                //         ),
+                //         Padding(
+                //           padding: const EdgeInsets.all(8.0),
+                //           child: Column(
+                //             crossAxisAlignment: CrossAxisAlignment.start,
+                //             children: [
+                //               Text(
+                //                 'Title 3',
+                //                 style: TextStyle(
+                //                   fontSize: 16,
+                //                   fontWeight: FontWeight.bold,
+                //                   fontFamily: 'Prompt',
+                //                 ),
+                //               ),
+                //               SizedBox(height: 4),
+                //               Text(
+                //                 'Subtitle 3',
+                //                 style: TextStyle(
+                //                   fontSize: 14,
+                //                   fontFamily: 'Prompt',
+                //                 ),
+                //               ),
+                //             ],
+                //           ),
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           ),
@@ -226,6 +227,7 @@ Text(
           
         ],
       ),
+       )
     );
   }
 }
